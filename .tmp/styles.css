@@ -1,0 +1,28 @@
+.btn-primary {
+  background-color: #F16D00;
+  color: black;
+  border: 1px solid black;
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus {
+  background-color: #F16D00;
+}
+body {
+  background-color: #A9A9A9;
+}
+body h4 {
+  display: inline-block;
+}
+body .container {
+  background-color: #AA6C39;
+  height: 100vh;
+}
+.quiz-area {
+  width: 100%;
+}
+.quiz-area li {
+  list-style: none;
+}

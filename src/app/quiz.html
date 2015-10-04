@@ -1,0 +1,34 @@
+<div class="quiz-area" ng-show="inProgress">
+	<div ng-show="!quizOver">
+		<h3>{{question}}</h3>
+		<ul>
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					{{option}}
+				</label>
+			</li>
+		</ul>
+		<button class="btn btn-primary" ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
+
+		<div ng-show="!answerMode">
+			<button class="btn btn-primary" ng-click="nextQuestion()">Next</button>
+			<span ng-show="correctAnswer"><h4>Correct! <i class="glyphicon glyphicon-thumbs-up"></i></h4></span>
+			<span ng-show="!correctAnswer"><h4>Incorrect <i class="glyphicon glyphicon-thumbs-down"></i></h4></span>
+		</div>
+	</div>
+
+	<div ng-show="quizOver">
+		<h3>HalloweeQuilibrium is over</h3>
+		<button class="btn btn-primary" ng-click="reset()">Play again</button>
+	</div>
+
+	<div>
+		<h4>Score: {{score}}</h4>
+	</div>
+</div>
+
+<div ng-show="!inProgress">
+	<h3>Welcome to HalloweeQuilibrium!</h3>
+	<button class="btn btn-primary" id="startQuiz" ng-click="start()">Start the Quiz</button>
+</div>

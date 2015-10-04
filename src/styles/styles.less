@@ -1,0 +1,34 @@
+//==========Variables
+@black: #00;
+@brown: #635142;
+@lt-orange: #AA6C39;
+@orange: #F16D00;
+@lt-grey: #D3D3D3;
+@dk-grey: #A9A9A9;
+//==========Variables
+
+.btn-primary {
+	background-color: @orange;
+	color: black;
+	border:  1px solid black;
+	&:active, &:hover, &:focus, &:active:hover, &:active:focus {
+		background-color: @orange;
+	}
+}
+
+body {
+	background-color: @dk-grey;
+	h4 {
+		display: inline-block;
+	}
+	.container {
+		background-color: @lt-orange;
+		height: 100vh;
+	}
+}
+.quiz-area {
+	width: 100%;
+	li {
+		list-style: none;
+	}
+}
